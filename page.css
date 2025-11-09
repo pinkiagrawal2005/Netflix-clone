@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Logo */
+.netflix-logo {
+  height: 40px;
+  width: auto;
+  margin: 20px 0 0 40px; /* moved slightly away from corner */
+  position: relative;
+  z-index: 5;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('images/stranger things.jpg') center center / cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2) 60%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  margin-left: 60px;
+  max-width: 45%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  color: #e50914;
+  border: 1px solid #fff;
+  padding: 0 5px;
+  font-weight: 900;
+}
+
+.show-title {
+  font-size: 3.8rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.show-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-buttons button {
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-play {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 0.8rem 2.5rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-play:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+.btn-play:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-mylist {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: #fff;
+}
+
+.btn-mylist:hover {
+  background-color: rgba(109, 109, 110, 0.5);
+}
+
+/* Movie Cards */
+.content-rows {
+  padding: 0 4%;
+  margin-top: -60px;
+  position: relative;
+  z-index: 5;
+}
+
+.card-list {
+  display: flex;
+  gap: 0.8rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.card-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+ .card a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: color 0.3s;
+}
+
+
+
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.card:hover {
+ .card a:hover {
+  color: #e50914; /* Netflix red on hover */
+}
+}
+
+/* More Reasons Section */
+.container2 {
+  margin: 50px 12vw;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card2 {
+  flex: 1 1 calc(50% - 10px);
+  background: linear-gradient(180deg, #1e1e3f 50%, #220222 100%);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card2 h3 {
+  font-size: 1.3rem;
+}
+
+.card2 p {
+  color: rgba(255,255,255,0.7);
+}
+
+.sml {
+  height: 60px;
+  width: 60px;
+  align-self: flex-end;
+}
+
+/* FAQ */
+.container3 {
+  margin: 50px 12vw;
+}
+
+.questionbox {
+  background-color: #2d2d2d;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.questionbox:hover {
+  background-color: #4d4d4d;
+}
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 1.3rem;
+}
+
+/* Footer */
+footer {
+  margin: 70px 12vw;
+  color: rgba(255,255,255,0.7);
+}
+
+.call {
+  margin-bottom: 20px;
+}
+
+.call a {
+  color: rgba(255,255,255,0.7);
+}
+
+.foot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.foot a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+
+.language-select select {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+#para {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: rgba(255,255,255,0.6);
+}
